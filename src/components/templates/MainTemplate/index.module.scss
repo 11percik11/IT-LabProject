@@ -1,0 +1,9 @@
+.mainTemplate  {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    &_main {
+        flex: 1 1 auto;
+    }
+}

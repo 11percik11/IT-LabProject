@@ -1,0 +1,42 @@
+@use '../../../../app/styles/variables.scss' as *;
+@use '../../../../app/styles/mixins.scss' as *;
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px;
+  font-size: 30px;
+
+  th {
+    padding: 0 0 6px 0;
+  }
+
+  td {
+    padding: 0 0 28px 0;
+  }
+
+  th {
+    font-weight: 600;
+    font-size: 20px;
+    color: $brown;
+  }
+
+  td {
+    background: white;
+    color: $text-color-black;
+  }
+}
+
+.thead {
+  border-bottom: 4px solid #E9E9E9;
+}
+
+tbody::before {
+  content: "";
+  display: block;
+  height: 29px;
+}

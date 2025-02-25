@@ -1,0 +1,57 @@
+.select {
+  position: relative;
+  max-width: 502px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+
+  &_value {
+    padding: 10px 31px;
+    height: 52px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+      background-color: #e9e9e9;
+    }
+  }
+
+  &_arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &_arrowOpen {
+    transform: rotate(180deg);
+  }
+
+  &_options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    background-color: #fff;
+    z-index: 1000;
+  }
+
+  &_option {
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: #f1f1f1;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@use '../../../../app/styles/variables.scss' as *;
+@use '../../../../app/styles/mixins.scss' as *;
+
+.button {
+  @include button-base;
+  background: none;
+  border-radius: $btn-border-radius;
+  font-size: $btn-font-size;
+  color: $text-color-black;
+
+  &--primary {
+    font-size: 30px;
+    text-align: left;
+    white-space: normal;
+  }
+
+  &--secondary {
+    @include button-variant($darkGreen, $color: $white);
+    transition: all 0.3s;
+    height: 52px;
+    max-width: 273px;
+    width: 100%;
+  }
+
+  
+  &--danger {
+    color: $brown;
+    font-size: 25px;
+  }
+  &--silver {
+    @include button-variant($silver, $color: $white);
+    transition: all 0.3s;
+    height: 52px;
+    max-width: 273px;
+    width: 100%;
+  }
+}

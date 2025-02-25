@@ -1,0 +1,15 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.flag {
+    height: 59px;
+    width: 59px;
+    border-radius: 100%;
+
+    &_Yes {
+        background-color: $lightGreen;
+    }
+
+    &_No {
+        background-color: $red;
+    }
+}

@@ -1,0 +1,30 @@
+@use'../../../app/styles/variables.scss' as *;
+
+.clientForm {
+    max-width: 800px;
+    width: 100%;
+
+    &_container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 45px;
+    }
+
+    &_container_margin {
+        margin: 59px 0 73px 0;
+    }
+
+    &_label {
+        font-size: 32px;
+        min-width: 190px;
+        font-weight: 600;
+        color: $brown;
+        margin-right: 10%;
+    }
+
+    &_input {
+        max-width: 502px;
+        width: 100%;
+        font-size: 30px
+    }
+}

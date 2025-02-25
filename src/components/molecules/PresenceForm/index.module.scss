@@ -1,0 +1,37 @@
+@use "../../../app/styles/variables.scss" as *;
+
+.presenceForm {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+
+  &_title {
+    min-width: 268px;
+    color: $brown;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  &_button {
+    letter-spacing: 0.7px;
+
+    &_margin {
+        margin: 0 0 0 8px;
+    }
+
+    &_active {
+      color: #FFFFFF;
+      background: #C4C4C4;
+      padding: 12px 24px;
+      border-radius: 23px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .presenceForm  {
+        gap: 1rem;
+        flex-direction: column;
+  }
+}

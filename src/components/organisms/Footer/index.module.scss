@@ -1,0 +1,8 @@
+@use "../../../app/styles/variables.scss" as *;
+
+.footer {
+    height: 88px;
+    width: -webkit-fill-available;
+    padding: 20px 0 0 0;
+    background: $white;
+}
